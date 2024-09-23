@@ -11,22 +11,23 @@ const Footer = () => {
             <div className='flex flex-col text-center items-center justify-center mb-10 '>
                 <FaEnvelope className='justify-center mb-2'/>
                 <p className='font-bold mb-1'>Info</p>
-                <a href='/' className='text-sm'>something@gmail.com</a>
+                <a href='/' className='text-sm'>apostlewinifred@gmail.com</a>
             </div>
             <div className='flex flex-col items-center justify-center mb-10'>
                 <IoCall className='justify-center mb-2'/>
                 <p className='font-bold mb-1'>Call</p>
-                <a href='/' className='text-sm'>0123456789</a>
+                <a href='/' className='text-sm'>+2348159570478</a>
+                <a href='/' className='text-sm'>+44 7745 156862</a>
             </div>
             <div className='flex flex-col items-center justify-center mb-10'>
                 <FaLocationDot className='justify-center mb-2'/>
                 <p className='font-bold mb-1'>Visit</p>
-                <a href='/' className='w-60 text-sm justify-between text-center'>1653 Georgia 85 South, Fayetteville, GA 30215, USA</a>
+                <a href='/' className='w-60 text-sm justify-between text-center'>1 Zionsgate bible church off Anayo Iwunze street Banana Estate Akaun Adamo ikorodu Lagos</a>
             </div>
             <div className='flex flex-col items-center justify-center mb-10'>
                 <FaRegCreditCard className='justify-center mb-2'/>
                 <p className='font-bold mb-1'>Give </p>
-                <a href='/' className='text-sm'>Give Online</a>
+                <a href='/give' className='text-sm'>Give Online</a>
             </div>
         </div>
         <div className='mt-20 mb-7 flex gap-5 justify-center'>

@@ -6,55 +6,54 @@ const Home = () => {
     <div className='mt-20'>
 
         {/* Sermons */}
-        <div className='p-20 bg-black text-white'>
+        <div className='md:p-20 bg-black py-14 text-white'>
             <div>
                 <p className='text-center font-extrabold md:text-5xl text-4xl'>Watch Our Latest Sermon</p>
             </div>
             <div className='md:flex justify-between mt-12 '>
-                <div className='flex flex-col justify-center items-center '>
+                <div className='flex flex-col justify-center items-center mb-4 '>
                     <img src={homeimg} alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                     <button className='gap-3 border-2 font-bold p-3 text-white  transition duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black'>Watch The Current Series</button>
                 </div>
-                <div className='flex flex-col justify-center items-center '>
+                <div className='flex flex-col justify-center items-center mb-4 '>
                     <img src={homeimg} alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                     <button className='gap-3 border-2 font-bold p-3 text-white  transition duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black'>Watch The Current Series</button>
                 </div>
-                <div className='flex flex-col justify-center items-center '>
+                <div className='flex flex-col justify-center items-center mb-4 '>
                     <img src={homeimg} alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                     <button className='gap-3 border-2 font-bold p-3 text-white  transition duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black'>Watch The Current Series</button>
                 </div>
             </div>
         </div> 
 
         {/* Upcoming Events */}
-        <div className='m-20 '>
+        <div className='md:p-20 py-14'>
             <div>
-                <p className='text-center font-extrabold md:text-5xl text-4xl'>Up coming Events</p>
+                <p className='text-center font-extrabold md:text-5xl text-4xl'>Up Coming Events</p>
             </div>
-            <div className='md:flex justify-between w-auto'>
+            <div className='md:flex justify-between'>
                 <div className='flex flex-col mt-10 justify-center items-center '>
                     <img src={homeimg}
                     href='/'
                     alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                 </div>
                 <div className='flex flex-col mt-10 justify-center items-center '>
                     <img src={homeimg}
                     href='/'
                     alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                 </div>
                 <div className='flex flex-col mt-10 justify-center items-center '>
                     <img src={homeimg}
                     href='/'
                     alt=''
-                    className='h-56 pb-3'/>
+                    className='md:h-56 p-4'/>
                 </div>                
             </div>
-
         </div>
     </div>
 

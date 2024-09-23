@@ -77,31 +77,30 @@ const Navbar = () => {
 
           </li>
           <li className="relative group">
-            <a href='/'>Events</a>
+            <Link to='/events'>Events</Link>
             <span className=" absolute left-0 bottom-0 mt-2 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
           </li>
           <li className="relative group">
-            <a href='/'>Give</a>
+            <Link to='/give'>Give</Link>
             <span className=" absolute left-0 bottom-0 mt-2 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
           </li>
           <li className="relative group">
-            <a href='/'>Plan Your Visit</a>
+            <Link to='/'>Plan Your Visit</Link>
             <span className=" absolute left-0 bottom-0 mt-2 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
           </li>
         </ul>
         
 
         {/* Mobile Menu */}
-                {/* Mobile Menu */}
-                <div
+        <div
           className={`fixed top-0 left-0 w-full h-full bg-black text-white transform ${
-            isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+            isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
           } transition-transform duration-300 ease-in-out z-50 flex flex-col items-center justify-center`}
         >
           {/* Close Button */}
           <button
             onClick={toggleMobileMenu}
-            className="absolute top-6 right-6 text-white text-3xl"
+            className="absolute top-9 right-4 text-white text-3xl"
           >
             <FaTimes />
           </button>
@@ -112,56 +111,56 @@ const Navbar = () => {
             <div className="px-4 mx-3 font-bold pt-4 gap-2 pb-4 space-y-4">
               <ul>
                 <li className="border border-white ">
-                  <a href='/'
+                  <Link to='/'
                   className="block text-lg w-full text-left pl-3 py-3 g hover:bg-gray-800 focus:outline-none">
-                  HOME</a>
+                  HOME</Link>
                   
                 </li>
                 <li className="border border-white mt-3">
-                  <a href='/'
+                  <Link to='/WatchLive'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >WATCH US LIVE</a>
+                  >WATCH US LIVE</Link>
                 </li>
                 <div className="border border-white mt-3">
-                  <a
-                    href='/'
+                  <Link
+                    to='/about'
                     onClick={toggleDropdown}
                     className="flex gap-44 text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
                   >
-                    ABOUT{' '}
+                    ABOUT
                     {isDropdownOpen ? (
-                      <AiOutlineMinus className="inline " />
+                      <AiOutlineMinus className="inline mt-1 text-2xl" />
                     ) : (
-                      <AiOutlinePlus className="inline" />
+                      <AiOutlinePlus className="inline mt-1 text-2xl" />
                     )}
-                  </a>
+                  </Link>
                   {isDropdownOpen && (
-                    <div className="space-y-2 bg-black text-left">
-                      <a href="#pastor" className="block text-lg py-2 hover:bg-gray-800">
+                    <div className="space-y-2 bg-black text-center">
+                      <Link to="/pastor" className="block text-lg py-2 hover:bg-gray-800">
                         OUR PASTOR
-                      </a>
-                      <a href="#beliefs" className="block text-lg py-2 hover:bg-gray-800">
+                      </Link>
+                      <Link to="/beliefs" className="block text-lg py-2 hover:bg-gray-800">
                         OUR BELIEFS
-                      </a>
-                      <a href="#service-times" className="block text-lg py-2 hover:bg-gray-800">
+                      </Link>
+                      <Link to="/service" className="block text-lg py-2 hover:bg-gray-800">
                         SERVICE TIMES
-                      </a>
+                      </Link>
                     </div>
                   )}
                 </div>                
                 <li className="border border-white mt-3">
-                  <a href='/'
+                  <Link to='/events'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >EVENTS</a>
+                  >EVENTS</Link>
                 </li>
                 <li className="border border-white mt-3">
-                  <a href='/'className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >GIVE</a>
+                  <Link to='/give' className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
+                  >GIVE</Link>
                 </li>
                 <li className="border border-white mt-3">
-                  <a href='/'
+                  <Link to='/Visit'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >PLAN YOUR VISIT</a>
+                  >PLAN YOUR VISIT</Link>
                 </li>
               </ul>
               {/* About with Dropdown */}

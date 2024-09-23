@@ -8,6 +8,8 @@ import WatchLive from "./pages/WatchLive";
 import Pastor from "./pages/Pastor";
 import Beliefs from "./pages/Beliefs";
 import Service from "./pages/Service";
+import Give from "./pages/Give"
+import Visit from "./pages/Visit";
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
     <Router>
       <div className="relative">
         <Carousel/>
-        <Navbar className='absolute top-0' />
+        <Navbar className='absolute top-0' /> 
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/pastor" element={<Pastor/>}/>
           <Route path="/beliefs" element={<Beliefs/>}/>
           <Route path="/service" element={<Service/>}/>
+          <Route path="/give" element={<Give/>}/>
+          <Route path="/visit" element={<Visit/>}/>
         </Routes>
         <Footer/>
       </div>      
