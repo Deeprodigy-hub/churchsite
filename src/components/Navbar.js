@@ -105,26 +105,31 @@ const Navbar = () => {
             <FaTimes />
           </button>
 
-          {/* Mobile Menu Items */}
-          {isMobileMenuOpen && (
-          <div className="md:hidden mt-36 gap-2 absolute top-0 left-0 w-full h-screen bg-black bg-opacity-90 z-50 overflow-y-auto">
+        {/* Mobile Menu Items */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-20 gap-2 absolute top-0 left-0 w-full h-screen bg-black bg-opacity-90 z-50 overflow-y-auto">
             <div className="px-4 mx-3 font-bold pt-4 gap-2 pb-4 space-y-4">
               <ul>
                 <li className="border border-white ">
                   <Link to='/'
-                  className="block text-lg w-full text-left pl-3 py-3 g hover:bg-gray-800 focus:outline-none">
+                  className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
+                  onClick={toggleMobileMenu} // Close the menu when the link is clicked
+                  >
                   HOME</Link>
-                  
                 </li>
                 <li className="border border-white mt-3">
                   <Link to='/WatchLive'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >WATCH US LIVE</Link>
+                  onClick={toggleMobileMenu} // Close the menu when the link is clicked
+                  >
+                  WATCH US LIVE</Link>
                 </li>
                 <div className="border border-white mt-3">
                   <Link
                     to='/about'
-                    onClick={toggleDropdown}
+                    onClick={(e) => {
+                      toggleDropdown(e);
+                    }}
                     className="flex gap-44 text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
                   >
                     ABOUT
@@ -136,35 +141,39 @@ const Navbar = () => {
                   </Link>
                   {isDropdownOpen && (
                     <div className="space-y-2 bg-black text-center">
-                      <Link to="/pastor" className="block text-lg py-2 hover:bg-gray-800">
+                      <Link to="/pastor" className="block text-lg py-2 hover:bg-gray-800" onClick={toggleMobileMenu}>
                         OUR PASTOR
                       </Link>
-                      <Link to="/beliefs" className="block text-lg py-2 hover:bg-gray-800">
+                      <Link to="/beliefs" className="block text-lg py-2 hover:bg-gray-800" onClick={toggleMobileMenu}>
                         OUR BELIEFS
                       </Link>
-                      <Link to="/service" className="block text-lg py-2 hover:bg-gray-800">
+                      <Link to="/service" className="block text-lg py-2 hover:bg-gray-800" onClick={toggleMobileMenu}>
                         SERVICE TIMES
                       </Link>
                     </div>
                   )}
-                </div>                
+                </div>
                 <li className="border border-white mt-3">
                   <Link to='/events'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >EVENTS</Link>
+                  onClick={toggleMobileMenu} // Close the menu when the link is clicked
+                  >
+                  EVENTS</Link>
                 </li>
                 <li className="border border-white mt-3">
                   <Link to='/give' className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >GIVE</Link>
+                  onClick={toggleMobileMenu} // Close the menu when the link is clicked
+                  >
+                  GIVE</Link>
                 </li>
                 <li className="border border-white mt-3">
                   <Link to='/Visit'
                   className="block text-lg w-full text-left pl-3 py-3 hover:bg-gray-800 focus:outline-none"
-                  >PLAN YOUR VISIT</Link>
+                  onClick={toggleMobileMenu} // Close the menu when the link is clicked
+                  >
+                  PLAN YOUR VISIT</Link>
                 </li>
               </ul>
-              {/* About with Dropdown */}
-
             </div>
           </div>
         )}
