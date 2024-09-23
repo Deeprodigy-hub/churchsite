@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/churchsite/static/css/main.3ccd767b.css",
-    "main.js": "/churchsite/static/js/main.a010c502.js",
+    "main.css": "/churchsite/static/css/main.9351d2bc.css",
+    "main.js": "/churchsite/static/js/main.5630d951.js",
     "static/js/453.7902585f.chunk.js": "/churchsite/static/js/453.7902585f.chunk.js",
+    "static/media/giveimg.jpg": "/churchsite/static/media/giveimg.1ded45615ef46fff9d96.jpg",
     "static/media/homeimg.jpg": "/churchsite/static/media/homeimg.1c23ff5b4a47950d36cc.jpg",
     "static/media/cau1.jpg": "/churchsite/static/media/cau1.85f4df636c60a2420dd1.jpg",
     "static/media/cau3.jpg": "/churchsite/static/media/cau3.50524aa2faf9135e94ea.jpg",
     "static/media/cau2.jpg": "/churchsite/static/media/cau2.30fbffb87d58bf6cb523.jpg",
     "static/media/zbc.png": "/churchsite/static/media/zbc.55499963e2eca874338d.png",
     "index.html": "/churchsite/index.html",
-    "main.3ccd767b.css.map": "/churchsite/static/css/main.3ccd767b.css.map",
-    "main.a010c502.js.map": "/churchsite/static/js/main.a010c502.js.map",
+    "main.9351d2bc.css.map": "/churchsite/static/css/main.9351d2bc.css.map",
+    "main.5630d951.js.map": "/churchsite/static/js/main.5630d951.js.map",
     "453.7902585f.chunk.js.map": "/churchsite/static/js/453.7902585f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ccd767b.css",
-    "static/js/main.a010c502.js"
+    "static/css/main.9351d2bc.css",
+    "static/js/main.5630d951.js"
   ]
 }
