@@ -26,7 +26,11 @@ const Navbar = () => {
         
         {/* logo */}
         <div className='items-center ' >
-          <img className='max-h-24 items-center' src={zbc} alt='' />
+          <a
+          href='/home'>
+            <img className='max-h-24 items-center' src={zbc} alt='' />          
+          </a>
+
         </div>
 
          {/* Icon for Mobile */}

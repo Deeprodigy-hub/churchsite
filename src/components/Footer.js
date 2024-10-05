@@ -22,7 +22,7 @@ const Footer = () => {
             <div className='flex flex-col items-center justify-center mb-10'>
                 <FaLocationDot className='justify-center mb-2'/>
                 <p className='font-bold mb-1'>Visit</p>
-                <a href='/' className='w-60 text-sm justify-between text-center'>1 Zionsgate bible church off Anayo Iwunze street Banana Estate Akaun Adamo ikorodu Lagos</a>
+                <a href='/' className='w-60 text-sm justify-between text-center'>1 Zionsgate Bible Church Off Anayo Iwunze Street Banana Estate Akaun Adamo Ikorodu Lagos</a>
             </div>
             <div className='flex flex-col items-center justify-center mb-10'>
                 <FaRegCreditCard className='justify-center mb-2'/>

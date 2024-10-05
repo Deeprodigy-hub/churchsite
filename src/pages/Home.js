@@ -1,5 +1,6 @@
 import React from 'react'
 import homeimg from '../assets/homeimg.jpg'
+import ZbcSun from '../assets/zbcsun.jpg'
 
 const Home = () => {
   return (
@@ -30,29 +31,29 @@ const Home = () => {
         </div> 
 
         {/* Upcoming Events */}
-        <div className='md:p-20 py-14'>
+        <div className='md:p-20 py-14 bg-slate-300'>
             <div>
                 <p className='text-center font-extrabold md:text-5xl text-4xl'>Up Coming Events</p>
             </div>
             <div className='md:flex justify-between'>
                 <div className='flex flex-col mt-10 justify-center items-center '>
-                    <img src={homeimg}
+                    <img src={ZbcSun}
                     href='/'
                     alt=''
-                    className='md:h-56 p-4'/>
+                    className='md:h-auto md:w-80    p-4'/>
                 </div>
                 <div className='flex flex-col mt-10 justify-center items-center '>
-                    <img src={homeimg}
+                    <img src={ZbcSun}
                     href='/'
                     alt=''
-                    className='md:h-56 p-4'/>
+                    className='md:h-auto md:w-80    p-4'/>
                 </div>
                 <div className='flex flex-col mt-10 justify-center items-center '>
-                    <img src={homeimg}
+                    <img src={ZbcSun}
                     href='/'
                     alt=''
-                    className='md:h-56 p-4'/>
-                </div>                
+                    className='md:h-auto md:w-80    p-4'/>
+                </div>               
             </div>
         </div>
     </div>
